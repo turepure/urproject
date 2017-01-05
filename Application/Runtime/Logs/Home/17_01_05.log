@@ -1,0 +1,690 @@
+[ 2017-01-05T11:25:06+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014257s ]
+NOTIC: [8] Undefined index: session_name D:\phpStudy\WWW\Application\Home\Controller\ParentController.class.php 第 49 行.
+
+[ 2017-01-05T13:13:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] Undefined index: session_name D:\phpStudy\WWW\Application\Home\Controller\ParentController.class.php 第 49 行.
+
+[ 2017-01-05T13:13:31+08:00 ] 127.0.0.1 /home/users/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Undefined index: session_name D:\phpStudy\WWW\Application\Home\Controller\ParentController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000582s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006795s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008667s ]
+
+[ 2017-01-05T13:13:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] Undefined index: session_name D:\phpStudy\WWW\Application\Home\Controller\ParentController.class.php 第 49 行.
+
+[ 2017-01-05T13:13:31+08:00 ] 127.0.0.1 /home/users/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Undefined index: session_name D:\phpStudy\WWW\Application\Home\Controller\ParentController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2017-01-05T13:13:31+08:00 ] 127.0.0.1 /home/parent/create_vcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-01-05T13:13:37+08:00 ] 127.0.0.1 /home/users/do_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+NOTIC: [8] Undefined index: session_name D:\phpStudy\WWW\Application\Home\Controller\ParentController.class.php 第 49 行.
+SQL: SELECT * FROM `ur_user` WHERE ( uername="test1" ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-01-05T13:13:37+08:00 ] 127.0.0.1 /home/Category/categoryList/?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SELECT ur_user.id as id,ur_user.uername,ur_user.password,ur_role.rolecode,ur_role.rolename,um1.id as mid,um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,ur_permission.pricode,ur_permission.priname FROM `ur_user` ur_user LEFT JOIN ur_userRole on ur_user.id = ur_userRole.userid
+LEFT JOIN ur_role on ur_role.id=ur_userRole.roleid LEFT JOIN ur_rolePermission
+on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid
+LEFT JOIN ur_moduel  as um2 on um1.parentid=um2.id  WHERE ( ur_user.id=1 )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-01-05T13:13:37+08:00 ] 127.0.0.1 /home/category/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2017-01-05T13:44:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+
+[ 2017-01-05T13:44:31+08:00 ] 127.0.0.1 /home/users/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2017-01-05T13:44:31+08:00 ] 127.0.0.1 /home/parent/create_vcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-01-05T13:44:40+08:00 ] 127.0.0.1 /home/users/do_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SELECT * FROM `ur_user` WHERE ( uername="test1" ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-01-05T13:44:40+08:00 ] 127.0.0.1 /home/Category/categoryList/?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SELECT ur_user.id as id,ur_user.uername,ur_user.password,ur_role.rolecode,ur_role.rolename,um1.id as mid,um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,ur_permission.pricode,ur_permission.priname FROM `ur_user` ur_user LEFT JOIN ur_userRole on ur_user.id = ur_userRole.userid
+LEFT JOIN ur_role on ur_role.id=ur_userRole.roleid LEFT JOIN ur_rolePermission
+on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid
+LEFT JOIN ur_moduel  as um2 on um1.parentid=um2.id  WHERE ( ur_user.id=1 )  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-01-05T13:44:40+08:00 ] 127.0.0.1 /home/category/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-01-05T15:17:17+08:00 ] 127.0.0.1 /home/Category/categoryList/?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+ERR: 1146:Table 'urtools.ur_userRole' doesn't exist
+ [ SQL语句 ] : SELECT ur_user.id as id,ur_user.uername,ur_user.password,ur_role.rolecode,ur_role.rolename,um1.id as mid,um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,ur_permission.pricode,ur_permission.priname FROM `ur_user` ur_user LEFT JOIN ur_userRole on ur_user.id = ur_userRole.userid
+LEFT JOIN ur_role on ur_role.id=ur_userRole.roleid LEFT JOIN ur_rolePermission
+on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid
+LEFT JOIN ur_moduel  as um2 on um1.parentid=um2.id  WHERE ( ur_user.id=1 ) 
+ERR: 1146:Table 'urtools.ur_userRole' doesn't exist
+ [ SQL语句 ] : SELECT ur_user.id as id,ur_user.uername,ur_user.password,ur_role.rolecode,ur_role.rolename,um1.id as mid,um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,ur_permission.pricode,ur_permission.priname FROM `ur_user` ur_user LEFT JOIN ur_userRole on ur_user.id = ur_userRole.userid
+LEFT JOIN ur_role on ur_role.id=ur_userRole.roleid LEFT JOIN ur_rolePermission
+on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid
+LEFT JOIN ur_moduel  as um2 on um1.parentid=um2.id  WHERE ( ur_user.id=1 ) 
+
+[ 2017-01-05T15:21:04+08:00 ] 127.0.0.1 /home/Category/categoryList/?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SELECT ur_user.id as id,ur_user.uername,ur_user.password,ur_role.rolecode,ur_role.rolename,um1.id as mid,um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,ur_permission.pricode,ur_permission.priname FROM `ur_user` ur_user LEFT JOIN ur_user_role on ur_user.id = ur_user_role.userid
+LEFT JOIN ur_role on ur_role.id=ur_user_role.roleid LEFT JOIN ur_role_permission
+on ur_role.id=ur_role_permission.roleid
+LEFT JOIN ur_moduel_permission on ur_role_permission.mpid=ur_moduel_permission.id
+LEFT JOIN ur_permission on ur_permission.id = ur_moduel_permission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduel_permission.modid
+LEFT JOIN ur_moduel  as um2 on um1.parentid=um2.id  WHERE ( ur_user.id=1 )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-01-05T15:21:05+08:00 ] 127.0.0.1 /home/category/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-01-05T16:13:16+08:00 ] 127.0.0.1 /home/Category/categoryList/?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SELECT ur_user.id as id,ur_user.uername,ur_user.password,ur_role.rolecode,ur_role.rolename,um1.id as mid,um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,ur_permission.pricode,ur_permission.priname FROM `ur_user` ur_user LEFT JOIN ur_user_role on ur_user.id = ur_user_role.userid
+LEFT JOIN ur_role on ur_role.id=ur_user_role.roleid LEFT JOIN ur_role_permission
+on ur_role.id=ur_role_permission.roleid
+LEFT JOIN ur_moduel_permission on ur_role_permission.mpid=ur_moduel_permission.id
+LEFT JOIN ur_permission on ur_permission.id = ur_moduel_permission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduel_permission.modid
+LEFT JOIN ur_moduel  as um2 on um1.parentid=um2.id  WHERE ( ur_user.id=1 )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2017-01-05T16:13:16+08:00 ] 127.0.0.1 /home/category/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-01-05T16:23:10+08:00 ] 127.0.0.1 /home/Category/categoryList/?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SELECT ur_user.id as id,ur_user.uername,ur_user.password,ur_role.rolecode,ur_role.rolename,um1.id as mid,um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,ur_permission.pricode,ur_permission.priname FROM `ur_user` ur_user LEFT JOIN ur_user_role on ur_user.id = ur_user_role.userid
+LEFT JOIN ur_role on ur_role.id=ur_user_role.roleid LEFT JOIN ur_role_permission
+on ur_role.id=ur_role_permission.roleid
+LEFT JOIN ur_moduel_permission on ur_role_permission.mpid=ur_moduel_permission.id
+LEFT JOIN ur_permission on ur_permission.id = ur_moduel_permission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduel_permission.modid
+LEFT JOIN ur_moduel  as um2 on um1.parentid=um2.id  WHERE ( ur_user.id=1 )  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2017-01-05T16:23:11+08:00 ] 127.0.0.1 /home/category/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-01-05T16:24:50+08:00 ] 127.0.0.1 /home/Category/categoryList/?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SELECT ur_user.id as id,ur_user.uername,ur_user.password,ur_role.rolecode,ur_role.rolename,um1.id as mid,um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,ur_permission.pricode,ur_permission.priname FROM `ur_user` ur_user LEFT JOIN ur_user_role on ur_user.id = ur_user_role.userid
+LEFT JOIN ur_role on ur_role.id=ur_user_role.roleid LEFT JOIN ur_role_permission
+on ur_role.id=ur_role_permission.roleid
+LEFT JOIN ur_moduel_permission on ur_role_permission.mpid=ur_moduel_permission.id
+LEFT JOIN ur_permission on ur_permission.id = ur_moduel_permission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduel_permission.modid
+LEFT JOIN ur_moduel  as um2 on um1.parentid=um2.id  WHERE ( ur_user.id=1 )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'moduelurl' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+NOTIC: [2] Illegal string offset 'childmoduelname' D:\phpStudy\WWW\Application\Runtime\Cache\Home\ba6fb7a53f563b144b12320b453a6dd1.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2017-01-05T16:24:50+08:00 ] 127.0.0.1 /home/category/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+

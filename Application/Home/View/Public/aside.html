@@ -1,0 +1,32 @@
+<aside class="Hui-aside">
+    <input runat="server" id="divScrollValue" type="hidden" value="" />
+    <div class="menu_dropdown bk_2">
+        <volist name="list" id="vo" >
+            <dl id="menu-article">
+                <dt><i class="Hui-iconfont">&#xe616;</i>{$key}<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <volist name="vo" id="child" key="k1">
+                            <li><a data-href="{$child.moduelurl}" data-title="{$child.childmoduelname}" href="javascript:void(0)">{$child}</a></li>
+                        </volist>
+
+                    </ul>
+                </dd>
+            </dl>
+
+        </volist>
+        <dl id="menu-admin">
+            <dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dd>
+                <ul>
+                    <li><a data-href="{:U('/admin/role/index')}" data-title="角色管理" href="javascript:void(0)" id="roleList">角色管理</a></li>
+                    <li><a data-href="{:U('/admin/permission/index')}" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
+                    <li><a data-href="{:U('/admin/list/index')}" data-title="管理员列表" href="javascript:void(0)">用户列表</a></li>
+                    <li><a data-href="{:U('/admin/shop/index')}" data-title="店铺管理" href="javascript:void(0)">店铺管理</a></li>
+                    <li><a data-href="{:U('/admin/cats/index')}" data-title="产品分类" href="javascript:void(0)">产品分类</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</aside>
+<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>

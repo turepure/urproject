@@ -1,0 +1,1386 @@
+[ 2017-01-04T14:51:15+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-01-04T14:51:17+08:00 ] 127.0.0.1 /admin/permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SELECT * FROM `ur_permission`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_permission` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2017-01-04T14:51:18+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-01-04T14:51:19+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0026s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-01-04T14:54:34+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0025s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2017-01-04T14:54:42+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-01-04T14:54:42+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0023s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-01-04T14:55:28+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2017-01-04T14:55:29+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0016s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-01-04T14:55:35+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-01-04T14:55:35+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-01-04T15:02:44+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2017-01-04T15:02:46+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0026s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-01-04T15:02:54+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+
+[ 2017-01-04T15:02:54+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-01-04T15:05:22+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0025s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2017-01-04T15:05:24+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+
+[ 2017-01-04T15:05:25+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+
+[ 2017-01-04T15:08:59+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0027s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002116s ]
+
+[ 2017-01-04T15:09:01+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+
+[ 2017-01-04T15:09:01+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-01-04T15:09:11+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0029s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2017-01-04T15:09:15+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+
+[ 2017-01-04T15:09:15+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+
+[ 2017-01-04T15:12:08+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0027s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2017-01-04T15:12:12+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+
+[ 2017-01-04T15:12:12+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-01-04T15:28:57+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0016s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000559s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2017-01-04T15:29:25+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-01-04T15:29:25+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+
+[ 2017-01-04T15:34:50+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0019s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2017-01-04T15:34:54+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-01-04T15:34:54+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-01-04T15:43:23+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0025s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2017-01-04T15:43:41+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+LEFT JOIN 
+(
+SELECT 
+ur_role.rolecode,ur_role.rolename,um1.id as mid,
+um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+ur_permission.pricode,ur_permission.priname from ur_role  
+LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+ WHERE (  ur_role.id=1) 
+) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0028s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-01-04T16:00:47+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) 
+                    ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0012s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-01-04T16:00:56+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) 
+                    ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0030s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2017-01-04T16:01:06+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) 
+                    ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0026s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-01-04T16:01:18+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) 
+                    ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0011s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2017-01-04T16:01:29+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-01-04T16:01:29+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-01-04T16:19:41+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+ERR: 1054:Unknown column 'tmp_tale.mpid' in 'field list'
+ [ SQL语句 ] : SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,tmp_tale.mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    ur_moduelPermission.id as mpid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) 
+                    ) as tmp_table on ur_moduel.id = tmp_table.mid  
+ERR: 1054:Unknown column 'tmp_tale.mpid' in 'field list'
+ [ SQL语句 ] : SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,tmp_tale.mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    ur_moduelPermission.id as mpid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) 
+                    ) as tmp_table on ur_moduel.id = tmp_table.mid  
+
+[ 2017-01-04T16:20:39+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+ERR: 1054:Unknown column 'tmp_tale.mpid' in 'field list'
+ [ SQL语句 ] : SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,tmp_tale.mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid  
+ERR: 1054:Unknown column 'tmp_tale.mpid' in 'field list'
+ [ SQL语句 ] : SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,tmp_tale.mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid  
+
+[ 2017-01-04T16:20:58+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,tmp_table.mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    ur_moduelPermission.id as mpid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0027s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0008s ]
+
+[ 2017-01-04T16:21:09+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,tmp_table.mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    ur_moduelPermission.id as mpid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0015s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0006s ]
+
+[ 2017-01-04T16:24:21+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,tmp_table.mpid as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    ur_moduelPermission.id as mpid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0030s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0006s ]
+
+[ 2017-01-04T16:24:41+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,tmp_table.mpid as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    ur_moduelPermission.id as mpid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0011s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0006s ]
+
+[ 2017-01-04T16:25:24+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,tmp_table.mpid as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,
+                    ur_moduelPermission.id as mpid,
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0011s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0007s ]
+
+[ 2017-01-04T16:33:39+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduelPermission.id as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN ur_moduelPermission on ur_moduel.id=ur_moduelPermission.modid
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,                 
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0033s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0007s ]
+
+[ 2017-01-04T16:34:20+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduelPermission.id as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN ur_moduelPermission on ur_moduel.id=ur_moduelPermission.modid
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,                 
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0030s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0011s ]
+
+[ 2017-01-04T16:35:40+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduelPermission.id as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN ur_moduelPermission on ur_moduel.id=ur_moduelPermission.modid
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,                 
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0027s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-01-04T16:35:45+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-01-04T16:35:45+08:00 ] 127.0.0.1 /admin/role/role_save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-01-04T16:47:38+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduelPermission.id as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN ur_moduelPermission on ur_moduel.id=ur_moduelPermission.modid
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,                 
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0037s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2017-01-04T16:47:45+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduelPermission.id as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN ur_moduelPermission on ur_moduel.id=ur_moduelPermission.modid
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,                 
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0016s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2017-01-04T16:47:50+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduelPermission.id as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN ur_moduelPermission on ur_moduel.id=ur_moduelPermission.modid
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,                 
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=2) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0033s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=2 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-01-04T16:48:06+08:00 ] 127.0.0.1 /admin/role/role_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SELECT ur_moduel.id,ur_moduel.moduelname as childname,ur_moduel.levelname,ur_moduelPermission.id as mpid,ur_moduel.parentid,um2.moduelname as parentname,IF(tmp_table.mid,'checked','') as has FROM `ur_moduel` ur_moduel 
+                    LEFT JOIN ur_moduel as um2 on ur_moduel.parentid=um2.id
+                    LEFT JOIN ur_moduelPermission on ur_moduel.id=ur_moduelPermission.modid
+                    LEFT JOIN 
+                    (
+                    SELECT 
+                    ur_role.rolecode,ur_role.rolename,um1.id as mid,                 
+                    um1.moduelcode,um1.moduelname as childmoduelname,um1.levelname,
+                    um1.parentid,um1.moduelurl,um2.moduelname as parentmoduelname,
+                    ur_permission.pricode,ur_permission.priname from ur_role  
+                    LEFT JOIN ur_userRole on ur_role.id=ur_userRole.roleid
+                    LEFT JOIN ur_rolePermission on ur_role.id=ur_rolePermission.roleid
+                    LEFT JOIN ur_moduelPermission on ur_rolePermission.mpid=ur_moduelPermission.id 
+                    LEFT JOIN ur_permission on ur_permission.id = ur_moduelPermission.priid
+                    LEFT JOIN ur_moduel as um1 on um1.id = ur_moduelPermission.modid 
+                    LEFT JOIN ur_moduel as um2 on um1.parentid=um2.id
+                    WHERE (  ur_role.id=1) ) as tmp_table on ur_moduel.id = tmp_table.mid   [ RunTime:0.0033s ]
+SQL: SELECT `rolename`,`rolecode` FROM `ur_role` WHERE ( id=1 )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
