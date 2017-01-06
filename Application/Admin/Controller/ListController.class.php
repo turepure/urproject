@@ -92,27 +92,32 @@ class ListController extends Controller
         )
             ->field("shop.id as shopid,shop.suffix as store,if(had.shopid,'checked', '') as checked")
             ->select();
-//        dump($result);die;
-        $all_rolename_ret = M('role')->field('rolename')->select();
+
+        $all_rolename_ret = M('role')->field('rolename,id')->select();
         $a_user_ret = M("user")->join(
             " left join ur_user_role on ur_user_role.userid=ur_user.id 
             LEFT JOIN ur_role on ur_role.id =ur_user_role.roleid")
             ->field('uername,password,rolename')
             ->select();
+//        dump($a_user_ret);die;
         $rolenames = array();
         foreach ($all_rolename_ret as $key => $value) {
             $tmp_array = array();
             if ($value['rolename'] == $a_user_ret[0]['rolename']) {
                 $tmp_array['rolename'] = $value['rolename'];
                 $tmp_array['selected'] = 'selected';
+                $tmp_array['roleid'] = $value['id'];
+
                 array_push($rolenames, $tmp_array);
             } else {
                 $tmp_array['rolename'] = $value['rolename'];
                 $tmp_array['selected'] = '';
+                $tmp_array['roleid'] = $value['id'];
                 array_push($rolenames, $tmp_array);
             }
         }
-//        dump($store_ret);die;
+//        dump($rolenames);die;
+        $this->assign('userid',$id);
         $this->assign('rolenames', $rolenames);
         $this->assign('userinfo', $a_user_ret[0]);
         $this->assign('stores', $store_ret);
@@ -122,8 +127,18 @@ class ListController extends Controller
     //编辑后保存==》更新
     public function user_save()
     {
-        $data = $_POST();
-        dump($data);die;
+        $user_shop = M('user_shop');
+        $data = $_POST;
+        $shops = $data['shopid'];
+        $user_shop->where("userid={$data['userid']}")->delete();
+        if(sizeof($shops)!=0){
+            foreach ($shops as $shop){
+                $info['userid'] = $data['userid'];
+                $info['shopid'] = $shop;
+                $user_shop->add($info);
 
+            }
+        }
+        echo '修改完成';
     }
 }

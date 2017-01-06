@@ -66,7 +66,7 @@ class ShopController extends Controller
             "ur_cats LEFT JOIN 
 (select ur_cats.id as catid,ur_cats.CategoryLevel,ur_cats.CategoryName,ur_cats.CategoryParentID,ur_cats.CategoryParentName,ur_shop.id as shopid,ur_shop.shopname,ur_shop.suffix,
 IF(ur_shop.id,'checked','') as has
- from ur_cats LEFT JOIN  ur_shopCats on ur_cats.id=ur_shopCats.catid LEFT JOIN ur_shop on ur_shop.id=ur_shopCats.shopid where shopid=".$id.") as tmp_table on ur_cats.id =tmp_table.catid")->field("ur_cats.id as catid,ur_cats.CategoryLevel,ur_cats.CategoryName,ur_cats.CategoryParentID,ur_cats.CategoryParentName,tmp_table.shopid,tmp_table.shopname,tmp_table.suffix,tmp_table.has")->select();
+ from ur_cats LEFT JOIN  ur_shop_cats on ur_cats.id=ur_shop_cats.catid LEFT JOIN ur_shop on ur_shop.id=ur_shop_cats.shopid where shopid=".$id.") as tmp_table on ur_cats.id =tmp_table.catid")->field("ur_cats.id as catid,ur_cats.CategoryLevel,ur_cats.CategoryName,ur_cats.CategoryParentID,ur_cats.CategoryParentName,tmp_table.shopid,tmp_table.shopname,tmp_table.suffix,tmp_table.has")->select();
 //        dump($res);die;
         $shopCat = $this->cat_tree($res);
 //        dump($shopCat);die;

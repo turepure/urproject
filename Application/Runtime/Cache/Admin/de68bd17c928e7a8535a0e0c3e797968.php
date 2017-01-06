@@ -33,6 +33,12 @@
 <body>
 <article class="page-container">
     <form action="<?php echo U('Admin/List/user_save');?>" method="post" class="form form-horizontal" id="form-admin-role-add">
+        <div class="row cl" style="display: none">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>用户ID：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="<?php echo ($userid); ?>" placeholder="" id="userid" name="userid" datatype="*4-16">
+            </div>
+        </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>登录名：</label>
             <div class="formControls col-xs-8 col-sm-9">
@@ -49,8 +55,8 @@
             <label class="form-label col-xs-4 col-sm-3">角色：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <!--<input type="text" class="input-text" value="<?php echo ($result["rolename"]); ?>" placeholder="" id="" name="rolename">-->
-                <select  class="input-text" value="<?php echo ($userinfo["rolename"]); ?>" placeholder="" id="" name="rolename">
-                    <?php if(is_array($rolenames)): $i = 0; $__LIST__ = $rolenames;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["rolename"]); ?>" selected="<?php echo ($vo["selected"]); ?>"><?php echo ($vo["rolename"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                <select  class="input-text" value="<?php echo ($userinfo["rolename"]); ?>" placeholder="" id="" name="roleid">
+                    <?php if(is_array($rolenames)): $i = 0; $__LIST__ = $rolenames;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["roleid"]); ?>" selected="<?php echo ($vo["selected"]); ?>"><?php echo ($vo["rolename"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                 </select>
             </div>
         </div>
@@ -60,7 +66,7 @@
                 <?php if(is_array($stores)): $i = 0; $__LIST__ = $stores;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$stores): $mod = ($i % 2 );++$i;?><dl class="permission-list">
                         <dd>
                             <label class=" col-xs-4 col-sm-6">
-                                <input type="checkbox"  <?php echo ($stores["checked"]); ?> name="user-Character-0-0" id="user-Character-0-0"><?php echo ($stores["store"]); ?></label>
+                                <input type="checkbox" value="<?php echo ($stores["shopid"]); ?>" <?php echo ($stores["checked"]); ?> name="shopid[]" id="shopid"><?php echo ($stores["store"]); ?></label>
 
                         </dd>
                     </dl><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -71,7 +77,7 @@
                 <button type="submit" class="btn btn-success radius" id="admin-role-save" name="admin-role-save"><i class="icon-ok"></i> 确定</button>
             </div>
         </div>
-        
+
     </form>
 </article>
 
@@ -109,43 +115,23 @@
             }
         });
 
-        $("#form-admin-role-add").validate({
-            rules:{
-                roleName:{
-                    required:true,
-                },
-            },
-            onkeyup:false,
-            focusCleanup:true,
-            success:"valid",
-            submitHandler:function(form){
-                $(form).ajaxSubmit();
-                var index = parent.layer.getFrameIndex(window.name);
-                parent.layer.close(index);
-            }
-        });
+//        $("#form-admin-role-add").validate({
+//            rules:{
+//                roleName:{
+//                    required:true,
+//                },
+//            },
+//            onkeyup:false,
+//            focusCleanup:true,
+//            success:"valid",
+//            submitHandler:function(form){
+//                $(form).ajaxSubmit();
+//                var index = parent.layer.getFrameIndex(window.name);
+//                parent.layer.close(index);
+//            }
+//        });
 
-//        $("#admin-role-save").click(function(){
-//            var add_data = $('#form-admin-role-add').serialize();
-//            console.log(add_data);
-//            $.ajax({
-//                url:"<?php echo U('Admin/list/user_save');?>",
-//                data:add_data,
-//                type:'get', //GET
-//                cache:false,
-//                async: false,
-//                success:function(msg){
-//
-//                    if(msg =='OK'){
-//                        window.location.reload();//刷新当前页面.
-//                        history.go(0);//刷新当前页面
-////                        $(this).hide();
-////                        alert('更新用户成功！');
-//                    }
-//                }
-//            });
-//
-//        })
+
 
     });
 </script>
