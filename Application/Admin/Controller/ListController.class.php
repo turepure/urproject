@@ -35,31 +35,26 @@ class ListController extends Controller
 
     public function add_user()
     {
-        $data['uername'] = $_GET['uername'];
-        $data['password'] = md5($_GET['password']);
-        $data['rolename'] = $_GET['rolename'];
+        $data = $_POST;
+//        dump($data);die;
+        $user = M('user');
+        $user_role = M('user_role');
+        $uername = $data['uername'];
+        $password = $data['password'];
+        $roleid = $data['roleid'];
+        $user_info['uername'] = $uername;
+        $user_info['password'] = $password;
+        $user->add($user_info);
+        $user_ret = $user->where("uername='$uername'")->field('id')->select();
+        $userid= $user_ret[0]['id'];
+        $role_info['userid'] = $userid;
+        $role_info['roleid'] = $roleid;
+        $user_role->add($role_info);
 
-        $result = M('user')->add($data);
-//        $res =  M("role")->add($data);
-        $resU = M('user')->field('id')->where("uername='$data[uername]'")->find();
-        $resR = M('role')->field('id,rolecode')->where("rolename='$data[rolename]'")->find();
-        $data['roleid'] = $resR['id'];
-        $data['rolecode'] = $resR['rolecode'];
-        $data['userid'] = $resU['id'];
-        $sql = "insert into ur_userRole (userid,roleid) values ('$data[userid]','$data[roleid]')";
-        $link = mysqli_connect("192.168.0.150", "root", "ur@2016!", "urtools");
-        if (mysqli_connect_errno()) {
-            printf("Connect failed: %s\n", mysqli_connect_error());
-            exit();
-        }
-        $resUR = mysqli_query($link, $sql);
-//        $resUR =  D("userRole")->add($data);
-        if ($result !== false && $resUR !== false) {
-            echo 'OK';
-        } else {
-            echo 'error!';
-        }
-        mysqli_close($link);
+
+
+
+
     }
 
 //删除用户 根据用户的id
@@ -136,7 +131,6 @@ class ListController extends Controller
                 $info['userid'] = $data['userid'];
                 $info['shopid'] = $shop;
                 $user_shop->add($info);
-
             }
         }
         echo '修改完成';

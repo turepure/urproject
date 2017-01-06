@@ -32,7 +32,7 @@
 </head>
 <body>
 <article class="page-container">
-    <form action="" method="post" class="form form-horizontal" id="form-admin-user-add">
+    <form action="<?php echo U('Admin/list/add_user');?>" method="post" class="form form-horizontal" id="form-admin-user-add">
 
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3">登录名</label>
@@ -49,9 +49,9 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3">角色中文名：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <select type="text" class="input-text" value="" placeholder="" id="rolename" name="rolename" datatype="*4-16" nullmsg="角色名户不能为空">
+                <select type="text" class="input-text" value="" placeholder="" id="rolenid" name="roleid" datatype="*4-16" nullmsg="角色名户不能为空">
                     <!--<option value=""></option>-->
-                    <?php if(is_array($res)): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["rolename"]); ?>"><?php echo ($vo["rolename"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                    <?php if(is_array($res)): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["rolename"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                 </select>
             </div>
         </div>
@@ -97,21 +97,21 @@
             }
         });
 
-        $("#form-admin-role-add").validate({
-            rules:{
-                roleName:{
-                    required:true,
-                },
-            },
-            onkeyup:false,
-            focusCleanup:true,
-            success:"valid",
-            submitHandler:function(form){
-                $(form).ajaxSubmit();
-                var index = parent.layer.getFrameIndex(window.name);
-                parent.layer.close(index);
-            }
-        });
+//        $("#form-admin-role-add").validate({
+//            rules:{
+//                roleName:{
+//                    required:true,
+//                },
+//            },
+//            onkeyup:false,
+//            focusCleanup:true,
+//            success:"valid",
+//            submitHandler:function(form){
+//                $(form).ajaxSubmit();
+//                var index = parent.layer.getFrameIndex(window.name);
+//                parent.layer.close(index);
+//            }
+//        });
 
         $("#admin-user-save").click(function(){
             var add_data = $('#form-admin-user-add').serialize();

@@ -4,9 +4,10 @@
     <list default="true" id="06e89e08-4b62-4103-a1a3-48fc73c2aca8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ListController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ListController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ShopController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ShopController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/List/user-edit.html" afterPath="$PROJECT_DIR$/Application/Admin/View/List/user-edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/de68bd17c928e7a8535a0e0c3e797968.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/de68bd17c928e7a8535a0e0c3e797968.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/List/admin-user-add.html" afterPath="$PROJECT_DIR$/Application/Admin/View/List/admin-user-add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/6fb6d75eacaee93022a3874e7fbd7509.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/6fb6d75eacaee93022a3874e7fbd7509.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_01_06.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_01_06.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_01_06.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_01_06.log" />
     </list>
     <ignored path="newProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,26 +46,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role_edit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Role/role_edit.html">
+      <file leaf-file-name="ListController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ListController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2252">
-              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="259">
+              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ListController.class.php">
+      <file leaf-file-name="admin-user-add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/List/admin-user-add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2068">
-              <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
-              <folding>
-                <marker date="1483688667771" expanded="true" signature="1452:1532" ph="insert into ur_userRole... " />
-              </folding>
+            <state relative-caret-position="556">
+              <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,7 +109,6 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Cats/add_cats.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Cats/add-cats.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Cats/cats-edit.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/List/admin-user-add.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/List/admin-list.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/UsersController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/1.txt" />
@@ -138,6 +134,7 @@
         <option value="$PROJECT_DIR$/Application/Admin/Controller/RoleController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/ShopController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/List/user-edit.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/List/admin-user-add.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/ListController.class.php" />
       </list>
     </option>
@@ -539,12 +536,12 @@
       <workItem from="1483414612879" duration="1561000" />
       <workItem from="1483512349584" duration="9073000" />
       <workItem from="1483576018297" duration="13137000" />
-      <workItem from="1483685480649" duration="3452000" />
+      <workItem from="1483685480649" duration="7528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="340456000" />
+    <option name="totallyTimeSpent" value="344532000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -556,7 +553,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -616,13 +613,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Common/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14939">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -943,20 +933,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/RoleController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="108" column="19" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Role/role_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2252">
           <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -971,13 +953,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/List/admin-user-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/RoleController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="108" column="19" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ListController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
-          <folding>
-            <marker date="1483688667771" expanded="true" signature="1452:1532" ph="insert into ur_userRole... " />
-          </folding>
+        <state relative-caret-position="259">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

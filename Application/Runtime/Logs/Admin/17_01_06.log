@@ -2475,3 +2475,1532 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
 
+[ 2017-01-06T16:02:03+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2017-01-06T16:02:11+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=james&password=123&roleid=%E7%AE%A1%E7%90%86%E5%91%98&_=1483689723287
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-01-06T16:02:11+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+
+[ 2017-01-06T16:03:44+08:00 ] 127.0.0.1 /admin/list/user_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SELECT shop.id as shopid,shop.suffix as store,if(had.shopid,'checked','') as checked FROM `ur_shop` as shop
+                            LEFT JOIN 
+                            (select suffix,shopid from ur_user  LEFT JOIN ur_user_shop on ur_user_shop.userid=ur_user.id 
+                            LEFT JOIN ur_shop on ur_user_shop.shopid=ur_shop.id where ur_user.id=1)
+                            as had
+                            on shop.id=had.shopid   [ RunTime:0.0021s ]
+SQL: SELECT `rolename`,`id` FROM `ur_role`  [ RunTime:0.0010s ]
+SQL: SELECT `uername`,`password`,`rolename` FROM `ur_user`  left join ur_user_role on ur_user_role.userid=ur_user.id 
+            LEFT JOIN ur_role on ur_role.id =ur_user_role.roleid   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Application\Runtime\Cache\Admin\de68bd17c928e7a8535a0e0c3e797968.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001391s ]
+
+[ 2017-01-06T16:03:47+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2017-01-06T16:03:57+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=jaems&password=123&roleid=5&_=1483689827672
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-01-06T16:03:57+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-01-06T16:07:43+08:00 ] 127.0.0.1 /admin/list/user_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-01-06T16:10:39+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+
+[ 2017-01-06T16:11:17+08:00 ] 127.0.0.1 /admin/list/user_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SELECT shop.id as shopid,shop.suffix as store,if(had.shopid,'checked','') as checked FROM `ur_shop` as shop
+                            LEFT JOIN 
+                            (select suffix,shopid from ur_user  LEFT JOIN ur_user_shop on ur_user_shop.userid=ur_user.id 
+                            LEFT JOIN ur_shop on ur_user_shop.shopid=ur_shop.id where ur_user.id=1)
+                            as had
+                            on shop.id=had.shopid   [ RunTime:0.0024s ]
+SQL: SELECT `rolename`,`id` FROM `ur_role`  [ RunTime:0.0007s ]
+SQL: SELECT `uername`,`password`,`rolename` FROM `ur_user`  left join ur_user_role on ur_user_role.userid=ur_user.id 
+            LEFT JOIN ur_role on ur_role.id =ur_user_role.roleid   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Application\Runtime\Cache\Admin\de68bd17c928e7a8535a0e0c3e797968.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2017-01-06T16:11:21+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-01-06T16:11:27+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=jaes&password=123&roleid=1&_=1483690281364
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+
+[ 2017-01-06T16:11:27+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-01-06T16:12:51+08:00 ] 127.0.0.1 /admin/list/user_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SELECT shop.id as shopid,shop.suffix as store,if(had.shopid,'checked','') as checked FROM `ur_shop` as shop
+                            LEFT JOIN 
+                            (select suffix,shopid from ur_user  LEFT JOIN ur_user_shop on ur_user_shop.userid=ur_user.id 
+                            LEFT JOIN ur_shop on ur_user_shop.shopid=ur_shop.id where ur_user.id=1)
+                            as had
+                            on shop.id=had.shopid   [ RunTime:0.0023s ]
+SQL: SELECT `rolename`,`id` FROM `ur_role`  [ RunTime:0.0008s ]
+SQL: SELECT `uername`,`password`,`rolename` FROM `ur_user`  left join ur_user_role on ur_user_role.userid=ur_user.id 
+            LEFT JOIN ur_role on ur_role.id =ur_user_role.roleid   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Application\Runtime\Cache\Admin\de68bd17c928e7a8535a0e0c3e797968.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-01-06T16:13:11+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2017-01-06T16:13:12+08:00 ] 127.0.0.1 /admin/permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SELECT * FROM `ur_permission`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_permission` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2017-01-06T16:13:13+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-01-06T16:13:15+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2017-01-06T16:13:16+08:00 ] 127.0.0.1 /admin/permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SELECT * FROM `ur_permission`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_permission` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-01-06T16:13:20+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2017-01-06T16:13:22+08:00 ] 127.0.0.1 /admin/permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SELECT * FROM `ur_permission`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_permission` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-01-06T16:13:22+08:00 ] 127.0.0.1 /admin/list/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SELECT u.id,`uername`,`password`,`rolename` FROM ur_user u LEFT JOIN ur_user_role ur ON u.ID=ur.userid LEFT JOIN ur_role r ON ur.roleid=r.id   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_user` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2017-01-06T16:37:52+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-01-06T16:38:02+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=jaems%60&password=456&roleid=1&_=1483691872192
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-01-06T16:38:02+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-01-06T16:38:21+08:00 ] 127.0.0.1 /admin/list/user_edit_display/id/71.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SELECT shop.id as shopid,shop.suffix as store,if(had.shopid,'checked','') as checked FROM `ur_shop` as shop
+                            LEFT JOIN 
+                            (select suffix,shopid from ur_user  LEFT JOIN ur_user_shop on ur_user_shop.userid=ur_user.id 
+                            LEFT JOIN ur_shop on ur_user_shop.shopid=ur_shop.id where ur_user.id=71)
+                            as had
+                            on shop.id=had.shopid   [ RunTime:0.0026s ]
+SQL: SELECT `rolename`,`id` FROM `ur_role`  [ RunTime:0.0007s ]
+SQL: SELECT `uername`,`password`,`rolename` FROM `ur_user`  left join ur_user_role on ur_user_role.userid=ur_user.id 
+            LEFT JOIN ur_role on ur_role.id =ur_user_role.roleid   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Application\Runtime\Cache\Admin\de68bd17c928e7a8535a0e0c3e797968.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2017-01-06T16:38:26+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2017-01-06T16:38:30+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=fwef&password=faewfaw&roleid=1&_=1483691906161
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `ur_user_role` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: uername D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 42 行.
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 43 行.
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+
+[ 2017-01-06T16:38:30+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: INSERT INTO `ur_user` (`uername`,`password`) VALUES ('fwef','faewfaw') [ RunTime:0.0041s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 47 行.
+ERR: 1054:Unknown column 'fwef' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `ur_user` WHERE ( uername=fwef and password=faewfaw  ) 
+ERR: 1054:Unknown column 'fwef' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `ur_user` WHERE ( uername=fwef and password=faewfaw  ) 
+
+[ 2017-01-06T16:39:22+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-01-06T16:39:24+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=faewf&password=fawefawf&roleid=1&_=1483691962485
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: uername D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 42 行.
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 43 行.
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+
+[ 2017-01-06T16:39:24+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: INSERT INTO `ur_user` (`uername`,`password`) VALUES ('faewf','fawefawf') [ RunTime:0.0043s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 47 行.
+SQL: SELECT `id` FROM `ur_user` WHERE ( uername='faewf' and password='fawefawf'  )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 48 行.
+
+[ 2017-01-06T16:40:42+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2017-01-06T16:40:46+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=gewagweag&password=awge&roleid=1&_=1483692043089
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index: uername D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 42 行.
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 43 行.
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+
+[ 2017-01-06T16:40:46+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: INSERT INTO `ur_user` (`uername`,`password`) VALUES ('gewagweag','awge') [ RunTime:0.0042s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 47 行.
+SQL: SELECT `id` FROM `ur_user` WHERE ( uername='gewagweag'  )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 48 行.
+
+[ 2017-01-06T16:42:04+08:00 ] 127.0.0.1 /admin/list/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SELECT u.id,`uername`,`password`,`rolename` FROM ur_user u LEFT JOIN ur_user_role ur ON u.ID=ur.userid LEFT JOIN ur_role r ON ur.roleid=r.id   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_user` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2017-01-06T16:42:13+08:00 ] 127.0.0.1 /admin/list/user_edit_display/id/72.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SELECT shop.id as shopid,shop.suffix as store,if(had.shopid,'checked','') as checked FROM `ur_shop` as shop
+                            LEFT JOIN 
+                            (select suffix,shopid from ur_user  LEFT JOIN ur_user_shop on ur_user_shop.userid=ur_user.id 
+                            LEFT JOIN ur_shop on ur_user_shop.shopid=ur_shop.id where ur_user.id=72)
+                            as had
+                            on shop.id=had.shopid   [ RunTime:0.0024s ]
+SQL: SELECT `rolename`,`id` FROM `ur_role`  [ RunTime:0.0008s ]
+SQL: SELECT `uername`,`password`,`rolename` FROM `ur_user`  left join ur_user_role on ur_user_role.userid=ur_user.id 
+            LEFT JOIN ur_role on ur_role.id =ur_user_role.roleid   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Application\Runtime\Cache\Admin\de68bd17c928e7a8535a0e0c3e797968.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002165s ]
+
+[ 2017-01-06T16:42:16+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-01-06T16:42:25+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=name&password=name&roleid=1&_=1483692136699
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Undefined index: uername D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 42 行.
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 43 行.
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+
+[ 2017-01-06T16:42:25+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: INSERT INTO `ur_user` (`uername`,`password`) VALUES ('name','name') [ RunTime:0.0039s ]
+SQL: SELECT `id` FROM `ur_user` WHERE ( uername='name' )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 48 行.
+
+[ 2017-01-06T16:43:46+08:00 ] 127.0.0.1 /admin/list/user_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SELECT shop.id as shopid,shop.suffix as store,if(had.shopid,'checked','') as checked FROM `ur_shop` as shop
+                            LEFT JOIN 
+                            (select suffix,shopid from ur_user  LEFT JOIN ur_user_shop on ur_user_shop.userid=ur_user.id 
+                            LEFT JOIN ur_shop on ur_user_shop.shopid=ur_shop.id where ur_user.id=1)
+                            as had
+                            on shop.id=had.shopid   [ RunTime:0.0012s ]
+SQL: SELECT `rolename`,`id` FROM `ur_role`  [ RunTime:0.0005s ]
+SQL: SELECT `uername`,`password`,`rolename` FROM `ur_user`  left join ur_user_role on ur_user_role.userid=ur_user.id 
+            LEFT JOIN ur_role on ur_role.id =ur_user_role.roleid   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Application\Runtime\Cache\Admin\de68bd17c928e7a8535a0e0c3e797968.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2017-01-06T16:45:11+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2017-01-06T16:45:13+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=fawefawe&password=egwaegaweg&roleid=1&_=1483692311440
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Undefined index: uername D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 42 行.
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 43 行.
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+
+[ 2017-01-06T16:45:13+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: INSERT INTO `ur_user` (`uername`,`password`) VALUES ('fawefawe','egwaegaweg') [ RunTime:0.0039s ]
+SQL: SELECT `id` FROM `ur_user` WHERE ( uername='fawefawe' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 48 行.
+
+[ 2017-01-06T16:46:40+08:00 ] 127.0.0.1 /admin/list/user_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SELECT shop.id as shopid,shop.suffix as store,if(had.shopid,'checked','') as checked FROM `ur_shop` as shop
+                            LEFT JOIN 
+                            (select suffix,shopid from ur_user  LEFT JOIN ur_user_shop on ur_user_shop.userid=ur_user.id 
+                            LEFT JOIN ur_shop on ur_user_shop.shopid=ur_shop.id where ur_user.id=1)
+                            as had
+                            on shop.id=had.shopid   [ RunTime:0.0018s ]
+SQL: SELECT `rolename`,`id` FROM `ur_role`  [ RunTime:0.0007s ]
+SQL: SELECT `uername`,`password`,`rolename` FROM `ur_user`  left join ur_user_role on ur_user_role.userid=ur_user.id 
+            LEFT JOIN ur_role on ur_role.id =ur_user_role.roleid   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Application\Runtime\Cache\Admin\de68bd17c928e7a8535a0e0c3e797968.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001783s ]
+
+[ 2017-01-06T16:46:43+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-01-06T16:46:45+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=fawefwa&password=afwefawe&roleid=1&_=1483692403342
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Undefined index: uername D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 42 行.
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 43 行.
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+
+[ 2017-01-06T16:46:45+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: INSERT INTO `ur_user` (`uername`,`password`) VALUES ('fawefwa','afwefawe') [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `ur_user` WHERE ( uername='fawefwa' )  [ RunTime:0.0006s ]
+
+[ 2017-01-06T16:46:52+08:00 ] 127.0.0.1 /admin/list/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SELECT u.id,`uername`,`password`,`rolename` FROM ur_user u LEFT JOIN ur_user_role ur ON u.ID=ur.userid LEFT JOIN ur_role r ON ur.roleid=r.id   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_user` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2017-01-06T16:56:55+08:00 ] 127.0.0.1 /admin/list/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SELECT u.id,`uername`,`password`,`rolename` FROM ur_user u LEFT JOIN ur_user_role ur ON u.ID=ur.userid LEFT JOIN ur_role r ON ur.roleid=r.id   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_user` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2017-01-06T16:57:12+08:00 ] 127.0.0.1 /admin/list/delete_user.html?id=77
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: DELETE FROM `ur_user` WHERE ( id='77' ) [ RunTime:0.0043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-01-06T16:57:13+08:00 ] 127.0.0.1 /admin/list/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SELECT u.id,`uername`,`password`,`rolename` FROM ur_user u LEFT JOIN ur_user_role ur ON u.ID=ur.userid LEFT JOIN ur_role r ON ur.roleid=r.id   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_user` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-01-06T16:57:16+08:00 ] 127.0.0.1 /admin/list/user_edit_display/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SELECT shop.id as shopid,shop.suffix as store,if(had.shopid,'checked','') as checked FROM `ur_shop` as shop
+                            LEFT JOIN 
+                            (select suffix,shopid from ur_user  LEFT JOIN ur_user_shop on ur_user_shop.userid=ur_user.id 
+                            LEFT JOIN ur_shop on ur_user_shop.shopid=ur_shop.id where ur_user.id=1)
+                            as had
+                            on shop.id=had.shopid   [ RunTime:0.0016s ]
+SQL: SELECT `rolename`,`id` FROM `ur_role`  [ RunTime:0.0005s ]
+SQL: SELECT `uername`,`password`,`rolename` FROM `ur_user`  left join ur_user_role on ur_user_role.userid=ur_user.id 
+            LEFT JOIN ur_role on ur_role.id =ur_user_role.roleid   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: result D:\phpStudy\WWW\Application\Runtime\Cache\Admin\de68bd17c928e7a8535a0e0c3e797968.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2017-01-06T16:57:19+08:00 ] 127.0.0.1 /admin/list/add_user_display.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SELECT * FROM `ur_role`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-01-06T16:57:33+08:00 ] 127.0.0.1 /admin/list/add_user.html?uername=james&password=admin&roleid=5&_=1483693039228
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined index: uername D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 42 行.
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 43 行.
+NOTIC: [8] Undefined index: roleid D:\phpStudy\WWW\Application\Admin\Controller\ListController.class.php 第 44 行.
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+ERR: 1048:Column 'uername' cannot be null
+ [ SQL语句 ] : INSERT INTO `ur_user` (`uername`,`password`) VALUES (NULL,NULL)
+
+[ 2017-01-06T16:57:33+08:00 ] 127.0.0.1 /admin/list/add_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: INSERT INTO `ur_user` (`uername`,`password`) VALUES ('james','admin') [ RunTime:0.0041s ]
+SQL: SELECT `id` FROM `ur_user` WHERE ( uername='james' )  [ RunTime:0.0006s ]
+SQL: INSERT INTO `ur_user_role` (`userid`,`roleid`) VALUES ('78','5') [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-01-06T16:57:37+08:00 ] 127.0.0.1 /admin/list/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SELECT u.id,`uername`,`password`,`rolename` FROM ur_user u LEFT JOIN ur_user_role ur ON u.ID=ur.userid LEFT JOIN ur_role r ON ur.roleid=r.id   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_user` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-01-06T16:57:41+08:00 ] 127.0.0.1 /admin/shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_shop` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ur_shop`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-01-06T16:57:43+08:00 ] 127.0.0.1 /admin/cats/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SELECT * FROM `ur_cats`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: counter D:\phpStudy\WWW\Application\Runtime\Cache\Admin\200b1546ecba59b3ec268faee00a3021.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-01-06T16:57:45+08:00 ] 127.0.0.1 /admin/shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_shop` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ur_shop`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-01-06T16:57:45+08:00 ] 127.0.0.1 /admin/list/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SELECT u.id,`uername`,`password`,`rolename` FROM ur_user u LEFT JOIN ur_user_role ur ON u.ID=ur.userid LEFT JOIN ur_role r ON ur.roleid=r.id   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_user` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-01-06T16:57:45+08:00 ] 127.0.0.1 /admin/permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SELECT * FROM `ur_permission`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_permission` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-01-06T16:57:46+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
