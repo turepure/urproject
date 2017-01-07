@@ -110,7 +110,7 @@ class roleController extends Controller
             $Role->add($info);
 
         }
-        echo "修改完毕！";
+        echo "修改完成！";
     }
 
     //批量删除
