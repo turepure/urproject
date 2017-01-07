@@ -52,9 +52,6 @@ class ListController extends Controller
         $user_role->add($role_info);
 
 
-
-
-
     }
 
 //删除用户 根据用户的id

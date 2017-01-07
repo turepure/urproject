@@ -19,7 +19,7 @@ class IndexController extends ParentController {
         $username = session('session_name');
         $this->assign('username',$username);
         $this->assign('role',$role);
-//        $this->render('管理中心');
+        $this->render('管理中心');
         $this->display('home');
     }
 

@@ -4004,3 +4004,295 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
 
+[ 2017-01-06T16:59:59+08:00 ] 127.0.0.1 /admin/cats/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SELECT * FROM `ur_cats`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: counter D:\phpStudy\WWW\Application\Runtime\Cache\Admin\200b1546ecba59b3ec268faee00a3021.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2017-01-06T17:00:01+08:00 ] 127.0.0.1 /admin/shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_shop` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ur_shop`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined index: priname D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 51 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\Application\Runtime\Cache\Admin\7455935b6bd33e1986489f1ec4f71875.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2017-01-06T17:00:02+08:00 ] 127.0.0.1 /admin/list/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SELECT u.id,`uername`,`password`,`rolename` FROM ur_user u LEFT JOIN ur_user_role ur ON u.ID=ur.userid LEFT JOIN ur_role r ON ur.roleid=r.id   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_user` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-01-06T17:00:03+08:00 ] 127.0.0.1 /admin/permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SELECT * FROM `ur_permission`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_permission` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-01-06T17:00:03+08:00 ] 127.0.0.1 /admin/role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SELECT r.id,r.rolecode,r.rolename FROM ur_role r  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ur_role` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
